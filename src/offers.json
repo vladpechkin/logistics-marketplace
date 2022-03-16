@@ -1,0 +1,92 @@
+[
+  {
+    "id": 0,
+    "text": "Сахар",
+    "originId": 0,
+    "destinationId": 1
+  },
+  {
+    "id": 1,
+    "text": "Молоко",
+    "originId": 0,
+    "destinationId": 2
+  },
+  {
+    "id": 2,
+    "text": "Хлеб",
+    "originId": 0,
+    "destinationId": 3
+  },
+  {
+    "id": 3,
+    "text": "Доски",
+    "originId": 0,
+    "destinationId": 4
+  },
+  {
+    "id": 4,
+    "text": "Доски",
+    "originId": 1,
+    "destinationId": 0
+  },
+  {
+    "id": 5,
+    "text": "Бензин",
+    "originId": 1,
+    "destinationId": 2
+  },
+  {
+    "id": 6,
+    "text": "Почта",
+    "originId": 1,
+    "destinationId": 3
+  },
+  {
+    "id": 7,
+    "text": "Вакцины",
+    "originId": 1,
+    "destinationId": 4
+  },
+  {
+		"id": 8,
+		"text": "Бетонные кольца",
+		"originId": 2,
+		"destinationId": 0
+	},
+  {
+		"id": 9,
+		"text": "Почта",
+		"originId": 2,
+		"destinationId": 1
+	},
+  {
+		"id": 10,
+		"text": "Хлеб",
+		"originId": 2,
+		"destinationId": 3
+	},
+  {
+		"id": 11,
+		"text": "Почта",
+		"originId": 2,
+		"destinationId": 4
+	},
+  {
+		"id": 12,
+		"text": "Цемент",
+		"originId": 2,
+		"destinationId": 4
+	},
+  {
+		"id": 13,
+		"text": "Вакцины",
+		"originId": 3,
+		"destinationId": 0
+	},
+  {
+		"id": 14,
+		"text": "Молоко",
+		"originId": 4,
+		"destinationId": 1
+	}
+]

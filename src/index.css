@@ -7,7 +7,68 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.ant-menu-vertical {
+  border-right: none !important; 
+}
+
+.ant-menu-title-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-layout-sider {
+  overflow-y: auto;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100% !important;
+  min-width: 330px !important;
+  max-width: none !important;
+  height: 100vh;
+  background-color: white !important;
+}
+
+.ant-layout-sider-children {
+  width: auto !important;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-right, .leaflet-marker-shadow, .leaflet-marker-draggable {
+  display: none !important;
+}
+
+.splitView {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.divider {
+  width: 5px;
+  height: 100vh;
+  background-color: grey;
+  cursor: w-resize;
+}
+
+.rightPane {
+  width: 100vw;
+  height:100vh;
+}
+
+label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem 1rem;
 }

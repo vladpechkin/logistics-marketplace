@@ -1,10 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { store } from './app/store';
-import { Provider } from 'react-redux';
-import * as serviceWorker from './serviceWorker';
+import React, { createRef, useEffect, useState } from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import { Provider } from 'react-redux'
+import 'leaflet/dist/leaflet.css'
+import 'antd/dist/antd.css'
+import { store } from './store'
+import { Layout } from 'antd'
+import offers from './offers.json'
+import { selectOffer, useAppDispatch } from './store'
+import { Sidebar } from './components/Sidebar'
+import { Map } from './components/Map'
+import { SplitView } from './components/SplitView'
+
+const App = () => {
+  const dispatch = useAppDispatch()
+  dispatch(selectOffer(offers[0]))
+  return (
+    <SplitView left={<Sidebar />} right={<Map/>}/>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,9 +27,4 @@ ReactDOM.render(
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+)
